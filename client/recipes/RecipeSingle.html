@@ -1,0 +1,11 @@
+<template name="RecipeSingle">
+    <h1 class="page-title">{{recipe.name}}</h1>
+    <ul class="shopping-list">
+        <h3>Ingredients</h3>
+        {{#each recipe.ingredients}}
+            <li>{{name}} - <span class="amount">{{amount}}</span></li>
+        {{else}}
+            <li><h3>Please add <a href="/recipe-book">recipes</a> to your menu</h3></li>
+        {{/each}}
+    </ul>
+</template>
